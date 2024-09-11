@@ -4,4 +4,5 @@
     echo "Ribuan Memori";
     echo "Hati & Paru Paru";
     echo "Echo 5x";
+    echo "test";
 ?>
