@@ -1,4 +1,4 @@
 <?php
-    echo "Hello Jhon Doe!!";
-    echo "ini message";
+    echo "Kagak kocak";
+    echo "S+P+O+Kocak";
 ?>
