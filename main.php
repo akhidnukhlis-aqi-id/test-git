@@ -1,20 +1,18 @@
 <?php
-class QuoteGenerator
-{
-    private $quotes = [
-        "Tidur itu opsional, debug itu keharusan.",
-        "SKS malam minggu? Copy-paste koding!",
-        "Belajar coding sambil nyari sinyal kayak nyari jodoh, susah tapi harus sabar.",
-        "Masuk IF ITB: ekspektasi bikin aplikasi, realita: ngoding sampai pagi.",
-        "Ngoding di Labtek: kopi udah kaya air putih, tugas numpuk kaya utang."
-    ];
+// Get the current hour
+$hour = date("H");
 
-    public function getRandomQuote()
-    {
-        return $this->quotes[array_rand($this->quotes)];
-    }
+// Determine the greeting based on the time of day
+if ($hour >= 5 && $hour < 12) {
+    $greeting = "Good morning!";
+} elseif ($hour >= 12 && $hour < 17) {
+    $greeting = "Good afternoon!";
+} elseif ($hour >= 17 && $hour < 21) {
+    $greeting = "Good evening!";
+} else {
+    $greeting = "Good night!";
 }
 
-$quoteGenerator = new QuoteGenerator();
-echo $quoteGenerator->getRandomQuote();
+// Display the greeting
+echo $greeting;
 ?>
